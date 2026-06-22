@@ -2,9 +2,7 @@ package com.acgp.notification_api.controller;
 
 import com.acgp.notification_api.dto.ApiResponseDTO;
 import com.acgp.notification_api.dto.NotificationRequestDTO;
-import com.acgp.notification_api.dto.NotificationResponseDTO;
 import com.acgp.notification_api.model.Notification;
-import com.acgp.notification_api.service.NotificationService;
 import com.acgp.notification_api.service.NotificationServiceImpl;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

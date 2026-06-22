@@ -7,6 +7,7 @@ import com.acgp.notification_api.storage.NotificationStorage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -21,7 +22,6 @@ public class NotificationServiceImpl {
         notification.setUserId(requestDTO.getUserId());
         notification.setMessage(requestDTO.getMessage());
         notification.setChannelType(requestDTO.getChannelType());
-
         NotificationProvider provider = providers.stream()
                 .filter(p -> p.getChannel() == notification.getChannelType())
                 .findFirst()
