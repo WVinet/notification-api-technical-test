@@ -9,5 +9,5 @@ import java.util.UUID;
 public class NotificationRequestDTO {
     private UUID userId;
     private String message;
-    private ChannelType channel;
+    private ChannelType channelType;
 }
