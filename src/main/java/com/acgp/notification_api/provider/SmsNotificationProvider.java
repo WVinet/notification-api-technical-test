@@ -9,7 +9,7 @@ public class SmsNotificationProvider implements NotificationProvider{
 
     @Override
     public ChannelType getChannel() {
-        return null;
+        return ChannelType.SMS;
     }
 
     @Override
