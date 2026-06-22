@@ -16,7 +16,7 @@ public class Notification {
     private UUID id;
     private UUID userId;
     private String message;
-    private ChannelType channel;
+    private ChannelType channelType;
     private LocalDateTime createdAt;
 
 }
