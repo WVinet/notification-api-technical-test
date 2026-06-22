@@ -1,3 +1,54 @@
+# Parte 1 - Lógica de Programación
+
+## Problema
+
+Dada una lista de números enteros, se debía construir una nueva lista que:
+
+* Eliminara los valores duplicados.
+* Quedara ordenada de menor a mayor.
+* No utilizara funciones nativas de ordenamiento.
+* No utilizara estructuras nativas para eliminar duplicados.
+
+## Solución Implementada
+
+La solución fue desarrollada utilizando únicamente:
+
+* Ciclos (`for`)
+* Condicionales (`if`)
+* Listas (`ArrayList`)
+* Métodos propios
+
+### Eliminación de duplicados
+
+Se recorrió la lista original y, para cada elemento, se verificó manualmente si ya existía en la lista resultado mediante un recorrido completo de la misma.
+
+Si el elemento no existía, se agregaba a la nueva lista.
+
+### Ordenamiento
+
+Una vez eliminados los duplicados, se aplicó el algoritmo **Selection Sort**, implementado manualmente mediante ciclos y comparaciones, sin utilizar funciones nativas como `sort()` o `Collections.sort()`.
+
+## Ejemplo
+
+Entrada:
+
+```text
+[4, 2, 7, 2, 4, 9, 1]
+```
+
+Salida:
+
+```text
+[1, 2, 4, 7, 9]
+```
+
+## Ubicación
+
+```text
+src/main/java/com/acgp/part1Logic/LogicExercise.java
+```
+
+
 # Notification API - Prueba Técnica
 
 ## Descripción
