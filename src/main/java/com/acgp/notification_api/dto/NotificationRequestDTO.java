@@ -1,13 +1,17 @@
 package com.acgp.notification_api.dto;
 
 import com.acgp.notification_api.enums.ChannelType;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.util.UUID;
 
 @Data
 public class NotificationRequestDTO {
-    private UUID userId;
+    @NotNull
+    private Integer userId;
+    @NotNull
     private String message;
+    @NotNull
     private ChannelType channelType;
 }

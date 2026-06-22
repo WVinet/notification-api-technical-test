@@ -14,7 +14,7 @@ public class Notification {
 
     @Generated
     private UUID id;
-    private UUID userId;
+    private Integer userId;
     private String message;
     private ChannelType channelType;
     private LocalDateTime createdAt;

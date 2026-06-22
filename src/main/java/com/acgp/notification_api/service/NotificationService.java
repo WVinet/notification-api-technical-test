@@ -1,17 +1,15 @@
 package com.acgp.notification_api.service;
 
 import com.acgp.notification_api.dto.NotificationRequestDTO;
-import com.acgp.notification_api.storage.NotificationStorage;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import com.acgp.notification_api.model.Notification;
 
-@Service
-@RequiredArgsConstructor
-public class NotificationService {
 
-    private final NotificationStorage storage;
+import java.util.List;
 
-    public void createNotification(NotificationRequestDTO requestDTO){
+public interface NotificationService {
 
-    }
+
+    Notification createNotification(NotificationRequestDTO requestDTO);
+
+    List<Notification> getNotifications();
 }
